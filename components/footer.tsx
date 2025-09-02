@@ -34,8 +34,12 @@ export function Footer() {
               className="space-y-4"
             >
               <div className="flex items-center space-x-3">
-                <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-                  <span className="text-white font-bold text-lg">MR</span>
+                <div className="w-12 h-12 rounded-xl overflow-hidden border-2 border-primary/30">
+                  <img
+                    src="/image.png"
+                    alt="Dr. Maher Ali Rusho"
+                    className="w-full h-full object-cover"
+                  />
                 </div>
                 <div>
                   <h3 className="text-xl font-bold">Dr. Maher Ali Rusho</h3>

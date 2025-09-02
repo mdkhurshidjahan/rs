@@ -41,6 +41,32 @@ export function HeroSection() {
           style={{ rotateX, rotateY }}
           className="perspective-1000 preserve-3d"
         >
+          {/* Profile Image */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.1, duration: 0.6 }}
+            className="mb-8 flex justify-center"
+          >
+            <div className="relative">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                className="w-32 h-32 md:w-40 md:h-40 rounded-full overflow-hidden border-4 border-primary/30 shadow-2xl"
+              >
+                <img
+                  src="/image.png"
+                  alt="Dr. Maher Ali Rusho"
+                  className="w-full h-full object-cover"
+                />
+              </motion.div>
+              <motion.div
+                animate={{ scale: [1, 1.2, 1] }}
+                transition={{ duration: 3, repeat: Infinity, ease: "easeInOut" }}
+                className="absolute inset-0 rounded-full bg-gradient-to-r from-primary/20 to-accent/20 blur-xl"
+              />
+            </div>
+          </motion.div>
+
           {/* Floating Badge */}
           <motion.div
             initial={{ opacity: 0, scale: 0.8 }}

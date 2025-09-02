@@ -55,8 +55,12 @@ export function Navigation() {
             whileHover={{ scale: 1.05 }}
             className="flex items-center space-x-2"
           >
-            <div className="w-10 h-10 rounded-lg bg-gradient-to-br from-primary to-accent flex items-center justify-center">
-              <span className="text-white font-bold text-lg">MR</span>
+            <div className="w-10 h-10 rounded-lg overflow-hidden border-2 border-primary/30">
+              <img
+                src="/image.png"
+                alt="Dr. Maher Ali Rusho"
+                className="w-full h-full object-cover"
+              />
             </div>
             <span className="text-xl font-bold gradient-text hidden sm:block">
               Dr. Maher Ali Rusho
